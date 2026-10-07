@@ -257,7 +257,7 @@ export function FeaturePortrait({
             className="float-slow absolute -top-4 -left-6 hidden rounded-xl px-3.5 py-2.5 sm:block"
             style={{ background: "var(--panel-solid)", border: "1px solid var(--border-strong)", boxShadow: "var(--shadow-lg)" }}>
             <p className="font-mono text-[8.5px] tracking-[0.18em] uppercase text-faint">Experience</p>
-            <p className="text-[15px] font-bold tracking-tight" style={{ color: "var(--accent)" }}>2+ years</p>
+            <p className="text-[15px] font-bold tracking-tight" style={{ color: "var(--accent)" }}>6+ years</p>
           </motion.div>
 
           <motion.div

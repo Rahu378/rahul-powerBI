@@ -5,7 +5,6 @@ export const ROUTES: RouteDef[] = [
   { path: "/about",      label: "About",      index: "02", blurb: "Operating principles & education" },
   { path: "/skills",     label: "Skills",     index: "03", blurb: "Every capability, explained and clickable" },
   { path: "/experience", label: "Experience", index: "04", blurb: "Three enterprises, in conversation" },
-  { path: "/projects",   label: "Projects",   index: "05", blurb: "Research and technical work, all public" },
-  { path: "/impact",     label: "Impact",     index: "06", blurb: "The numbers, as a live dashboard" },
-  { path: "/contact",    label: "Contact",    index: "07", blurb: "Start a conversation" },
+  { path: "/impact",     label: "Impact",     index: "05", blurb: "The numbers, as a live dashboard" },
+  { path: "/contact",    label: "Contact",    index: "06", blurb: "Start a conversation" },
 ];

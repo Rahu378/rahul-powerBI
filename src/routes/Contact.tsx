@@ -116,7 +116,7 @@ export default function Contact() {
 
             <Reveal delay={0.16}>
               <div className="flex flex-wrap gap-2">
-                <Chip tone="accent">2+ yrs enterprise BI</Chip>
+                <Chip tone="accent">6+ yrs enterprise BI</Chip>
                 <Chip tone="cyan">Full-stack ownership</Chip>
                 <Chip tone="violet">US-based</Chip>
               </div>

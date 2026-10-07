@@ -19,7 +19,6 @@ import Contact from "./routes/Contact";
 import Experience from "./routes/Experience";
 import Home from "./routes/Home";
 import NotFound from "./routes/NotFound";
-import Projects from "./routes/Projects";
 
 const Impact = lazy(() => import("./routes/Impact"));
 import Skills from "./routes/Skills";
@@ -88,7 +87,6 @@ export default function App() {
               <Route path="/about" element={<About />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/experience" element={<Experience />} />
-              <Route path="/projects" element={<Projects />} />
               <Route path="/impact" element={<Suspense fallback={<RouteFallback />}><Impact /></Suspense>} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />

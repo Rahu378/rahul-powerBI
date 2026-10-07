@@ -86,8 +86,8 @@ export default function Home() {
                 initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.95, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="mt-6 max-w-[58ch] text-[clamp(1.02rem,1.55vw,1.22rem)] leading-[1.65] text-muted">
-                {profile.yearsExp} years delivering BI and reporting across financial services, insurance and
-                enterprise operations. <span style={{ color: "var(--text)" }}>{profile.tagline}</span>
+                {profile.yearsExp} years architecting enterprise BI across Sales, Service, Marketing and Field
+                Operations. <span style={{ color: "var(--text)" }}>{profile.tagline}</span>
               </motion.p>
 
               <motion.div

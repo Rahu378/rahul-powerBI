@@ -52,7 +52,7 @@ export default function Experience() {
               style={{ border: "1px solid var(--border)", background: "var(--panel)" }}>
               {[...jobs].reverse().map((j) => {
                 const active = j.id === activeId;
-                const weight = j.id === "appworks" ? 1.0 : j.id === "dxc" ? 0.42 : 0.6;
+                const weight = j.id === "dxc" ? 3.6 : j.id === "accenture" ? 1.1 : 1.7;
                 return (
                   <motion.button
                     key={j.id}

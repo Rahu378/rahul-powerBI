@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import {
-  BadgeCheck, Boxes, FileText, Gauge, GraduationCap, Rocket, ShieldCheck, Users, Workflow,
+  Boxes, FileText, Gauge, GraduationCap, Rocket, ShieldCheck, Users, Workflow,
 } from "lucide-react";
 import { useState } from "react";
 import PageShell from "../components/PageShell";
 import Quiz from "../components/Quiz";
 import { FeaturePortrait } from "../components/Portrait";
 import { Chip, GlassCard, Reveal, SectionHeading, Stagger, staggerChild } from "../components/ui";
-import { certifications, education, leadership, principles, profile } from "../data/profile";
+import { education, principles, profile } from "../data/profile";
 
 const ICONS: Record<string, any> = { Boxes, Gauge, ShieldCheck, Workflow, Users, FileText };
 
@@ -31,7 +31,7 @@ export default function About() {
           <div>
             <SectionHeading
               eyebrow="02 / About"
-              title="Two years of making data "
+              title="Six years of making data "
               accentWord="trustworthy"
               lead={profile.summary}
             />
@@ -185,67 +185,13 @@ export default function About() {
           ))}
         </div>
 
-        {/* ───────────────────── Certifications ───────────────────── */}
-        <Reveal delay={0.15}>
-          <div className="mt-16 flex items-center gap-3">
-            <BadgeCheck size={17} style={{ color: "var(--cyan)" }} />
-            <p className="eyebrow">Certifications</p>
-            <span className="hairline flex-1" />
-          </div>
-        </Reveal>
-
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {certifications.map((c, i) => (
-            <Reveal key={c.id} delay={i * 0.08}>
-              <GlassCard className="group h-full p-6">
-                <div className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full" style={{ background: c.accent }} />
-                  <div>
-                    <p className="text-[15px] leading-snug font-semibold tracking-tight">{c.name}</p>
-                    <p className="mt-1.5 font-mono text-[10px] tracking-[0.18em] text-faint uppercase">{c.issuer}</p>
-                  </div>
-                </div>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-
-        {/* ───────────────────── Leadership ───────────────────── */}
-        <Reveal delay={0.15}>
-          <div className="mt-16 flex items-center gap-3">
-            <Users size={17} style={{ color: "var(--violet)" }} />
-            <p className="eyebrow">Leadership &amp; activities</p>
-            <span className="hairline flex-1" />
-          </div>
-        </Reveal>
-
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {leadership.map((l, i) => (
-            <Reveal key={l.id} delay={i * 0.1}>
-              <GlassCard className="group relative h-full overflow-hidden p-7">
-                <div className="absolute -top-16 -right-16 h-40 w-40 rounded-full opacity-20 blur-3xl transition-opacity duration-700 group-hover:opacity-45"
-                  style={{ background: l.accent }} />
-                <div className="relative">
-                  <p className="font-mono text-[9.5px] tracking-[0.2em] uppercase" style={{ color: l.accent }}>
-                    {l.where}
-                  </p>
-                  <h4 className="mt-3 text-[17px] leading-tight font-bold tracking-tight">{l.org}</h4>
-                  <p className="mt-2 text-[13px] font-medium text-muted">{l.role}</p>
-                  <div className="my-5 hairline" />
-                  <p className="text-[13px] leading-[1.7] text-muted">{l.body}</p>
-                </div>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-
         <Reveal delay={0.2}>
           <div className="mt-10 flex flex-col items-start gap-4 rounded-2xl p-7 sm:flex-row sm:items-center sm:justify-between"
             style={{ border: "1px solid color-mix(in oklab, var(--accent) 26%, transparent)", background: "color-mix(in oklab, var(--accent) 6%, transparent)" }}>
             <div className="flex items-start gap-4">
               <Rocket size={20} className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }} />
               <div>
-                <p className="text-[15px] font-semibold">Currently Power BI Developer at NextGen IT Solutions.</p>
+                <p className="text-[15px] font-semibold">Currently Sr. Power BI Developer at Genuine Parts Company.</p>
                 <p className="mt-1.5 text-[13px] text-muted">
                   Available for contract engagements, and experienced owning projects end to end. Let's talk about the problem.
                 </p>
