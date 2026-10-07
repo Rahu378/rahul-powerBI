@@ -38,6 +38,7 @@ export default function Projects() {
                         {p.name}
                       </h3>
                     </div>
+                    {p.url && (
                     <a
                       href={p.url}
                       target="_blank"
@@ -53,6 +54,7 @@ export default function Projects() {
                       GitHub
                       <ArrowUpRight size={12} />
                     </a>
+                    )}
                   </div>
 
                   <p className="mt-4 text-[14.5px] leading-[1.7] text-muted">{p.summary}</p>
